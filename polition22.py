@@ -15,13 +15,18 @@ colum = {'Tn':'temp_min',
     'station_id':'station_id',
     'date':'date_recorded'}
 data = data.rename(columns=colum)
+# Transforming Datetime to US
 data = data.assign(
     date_recorded = data['date_recorded'].apply(
         lambda x:datetime.strptime(x,'%d-%m-%Y')
     )
 )
-# Transforming Datetime to US
+# Data per year and month
 data['Tahun'] = pd.to_datetime(data['date_recorded']).dt.strftime('%Y')
 data = data[data.Tahun == '2020'].reset_index(drop=True)
 data['Bulan'] = pd.to_datetime(data['date_recorded']).dt.strftime('%m')
-data
+data_bulan = data[data.Bulan == '01'].reset_index(drop=True)
+data_bulan
+# High data per colums
+data_bulan = data_bulan[(data_bulan.wind_direction_at_max_speed>100) & (data_bulan.wind_direction_at_max_speed<200)]
+data_bulan
