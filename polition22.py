@@ -36,3 +36,4 @@ ctypes = {
 data_bulan = data_bulan.astype(ctypes)
 data_bulan.dtypes
 data_bulan
+#shelwan riaudy U
