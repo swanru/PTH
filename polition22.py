@@ -29,4 +29,10 @@ data_bulan = data[data.Bulan == '01'].reset_index(drop=True)
 data_bulan
 # High data per colums
 data_bulan = data_bulan[(data_bulan.wind_direction_at_max_speed>100) & (data_bulan.wind_direction_at_max_speed<200)]
+ctypes = {
+    'Tahun':int,
+    'Bulan':int,
+}
+data_bulan = data_bulan.astype(ctypes)
+data_bulan.dtypes
 data_bulan
