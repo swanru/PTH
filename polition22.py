@@ -25,7 +25,7 @@ data = data.assign(
 data['Tahun'] = pd.to_datetime(data['date_recorded']).dt.strftime('%Y')
 data = data[data.Tahun == '2020'].reset_index(drop=True)
 data['Bulan'] = pd.to_datetime(data['date_recorded']).dt.strftime('%m')
-data_bulan = data[data.Bulan == '01'].reset_index(drop=True)
+data_bulan = data[data.Bulan == '02'].reset_index(drop=True)
 data_bulan
 # High data per colums
 data_bulan = data_bulan[(data_bulan.wind_direction_at_max_speed>100) & (data_bulan.wind_direction_at_max_speed<200)]
@@ -36,5 +36,3 @@ ctypes = {
 data_bulan = data_bulan.astype(ctypes)
 data_bulan.dtypes
 data_bulan
-#shelwan riaudy U
-#shelwan riaudy u universitas ahmad dahlan
