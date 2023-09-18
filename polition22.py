@@ -50,8 +50,8 @@ visual_data = DataFrame({
 fig, ax = plt.subplots(figsize=(15,7.5))
 ax.set_title("Temperature by Month at Aceh")
 ax.plot(visual_data.index,visual_data['temp_min'],label='Min. Temp')
-ax.plot(visual_data.index,visual_data['temp_avg'],label='Avg. Temp')
 ax.plot(visual_data.index,visual_data['temp_max'],label='Max. Temp')
+ax.plot(visual_data.index,visual_data['temp_avg'],label='Avg. Temp')
 ax.legend()
 ax.plot
 # data_bulan
