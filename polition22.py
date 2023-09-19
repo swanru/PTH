@@ -41,7 +41,6 @@ temp_avg_agg = pd.NamedAgg('temp_avg','mean')
 temp_avg_count_agg = pd.NamedAgg('temp_avg','count')
 new_data = data.groupby('date_recorded').agg(temp_max=temp_max_agg,temp_min=temp_min_agg,
                                             temp_avg = temp_avg_agg,temp_count=temp_avg_count_agg)
-
 visual_data = DataFrame({
     'temp_max':new_data['temp_max'].resample('1M').max(),
     'temp_min':new_data['temp_min'].resample('1M').min(),
