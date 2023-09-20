@@ -47,7 +47,7 @@ visual_data = DataFrame({
     'temp_avg':new_data.resample('1M').agg(func=lambda x:sum(x.temp_count * x.temp_avg)/sum(x.temp_count))
 })
 fig, ax = plt.subplots(figsize=(20,7.5))
-ax.set_title("Temperature by Month at Aceh")
+ax.set_title("Temperature by Month at Aceh Month Januari")
 ax.plot(visual_data.index,visual_data['temp_min'],label='Min. Temp')
 ax.plot(visual_data.index,visual_data['temp_max'],label='Max. Temp')
 ax.plot(visual_data.index,visual_data['temp_avg'],label='Avg. Temp')
