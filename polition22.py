@@ -46,7 +46,7 @@ visual_data = DataFrame({
     'temp_min':new_data['temp_min'].resample('1M').min(),
     'temp_avg':new_data.resample('1M').agg(func=lambda x:sum(x.temp_count * x.temp_avg)/sum(x.temp_count))
 })
-#daily push day 12
+#daily push day 13
 fig, ax = plt.subplots(figsize=(20,7.5))
 ax.set_title("Temperature by Month at Aceh Month Januari")
 ax.plot(visual_data.index,visual_data['temp_min'],label='Min. Temp')
