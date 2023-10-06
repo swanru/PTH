@@ -49,5 +49,5 @@ class Cat(Animal):
    def suara(self):
       return ("meow!")
 myCat = Cat("Neko",3,"Persian")
-suara = myCat.suara()  
-print(myCat.deskripsi(),suara)
+Suara = myCat.suara()  
+print(myCat.deskripsi(),Suara)
