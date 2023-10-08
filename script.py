@@ -48,6 +48,6 @@ class Cat(Animal):
       return (f"{self.name} adalah kucing berjenis {self.species} yang sudah berumur {self.age} tahun")
    def suara(self):
       return ("meow!")
-myCat = Cat("Neko",3,"Persian")
+myCat = Cat("Nekoo",3,"Persian")
 Suara = myCat.suara()  
 print(myCat.deskripsi(),Suara)
