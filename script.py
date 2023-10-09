@@ -38,16 +38,20 @@ import numpy
 #     - Atribut age bernilai: 3
 #     - Atribut species bernilai: "Persian".
 # """
-class Animal:
-   def __init__(self,name,age,species):
-      self.name = name
-      self.age = age
-      self.species = species
-class Cat(Animal):
-   def deskripsi(self):
-      return (f"{self.name} adalah kucing berjenis {self.species} yang sudah berumur {self.age} tahun")
-   def suara(self):
-      return ("meow!")
-myCat = Cat("Nekoo",3,"Persian")
-Suara = myCat.suara()  
-print(myCat.deskripsi(),Suara)
+# class Animal:
+#    def __init__(self,name,age,species):
+#       self.name = name
+#       self.age = age
+#       self.species = species
+# class Cat(Animal):
+#    def deskripsi(self):
+#       return (f"{self.name} adalah kucing berjenis {self.species} yang sudah berumur {self.age} tahun")
+#    def suara(self):
+#       return ("meow!")
+# myCat = Cat("Nekoo",3,"Persian")
+# Suara = myCat.suara()  
+# print(myCat.deskripsi(),Suara)
+total = 4000000000
+margin = total / 12
+margin_bulan = margin / 30
+print(margin,margin_bulan)
