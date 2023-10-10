@@ -2,8 +2,9 @@ import os
 import argparse
 from time import time
 import pandas as pd
-import numpy 
-
+import numpy as np
+import unittest
+import math
 # matrik = numpy.array([[1, 2, 3],
 #         [4, 5, 6],
 #         [7, 8, 9]])
@@ -51,7 +52,18 @@ import numpy
 # myCat = Cat("Nekoo",3,"Persian")
 # Suara = myCat.suara()  
 # print(myCat.deskripsi(),Suara)
-total = 4000000000
-margin = total / 12
-margin_bulan = margin / 30
-print(margin,margin_bulan)
+# total = 4000000000
+# margin = total / 12
+# margin_bulan = margin / 30
+# print(margin,margin_bulan)
+# def LuasPersegiPanjang(panjang: int = 2, lebar: int = None):
+#     luas = panjang*lebar
+#     return luas
+
+# luas_satu = LuasPersegiPanjang(lebar=2)
+# print(luas_satu)
+# print(math.sqrt(25))
+from scripy import stats
+jumlah_kucing = np.array([3, 2, 1, 1, 2, 3, 2, 1, 0, 2])
+modus = stats.mode()
+print(jumlah_kucing.mean(),np.median(jumlah_kucing))
