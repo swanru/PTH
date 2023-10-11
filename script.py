@@ -63,7 +63,7 @@ import math
 # luas_satu = LuasPersegiPanjang(lebar=2)
 # print(luas_satu)
 # print(math.sqrt(25))
-from scripy import stats
-jumlah_kucing = np.array([3, 2, 1, 1, 2, 3, 2, 1, 0, 2])
-modus = stats.mode()
-print(jumlah_kucing.mean(),np.median(jumlah_kucing))
+from scipy import stats
+jumlah_kucing = np.array([3, 2, 1, 1, 2, 3, 2, 1, 0, 1,2,3])
+modus = stats.mode(jumlah_kucing)[0]
+print(jumlah_kucing.mean(),",",np.median(jumlah_kucing),",",modus)
