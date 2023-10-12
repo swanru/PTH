@@ -67,13 +67,24 @@ import math
 # jumlah_kucing = np.array([3, 2, 1, 1, 2, 3, 2, 1, 0, 1,2,3])
 # modus = stats.mode(jumlah_kucing)[0]
 # print(jumlah_kucing.mean(),",",np.median(jumlah_kucing),",",modus)
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
  
-cities = ('Bogor', 'Bandung', 'Jakarta', 'Semarang', 'Yogyakarta', 
-          'Surakarta','Surabaya', 'Medan', 'Makassar')
+# cities = ('Bogor', 'Bandung', 'Jakarta', 'Semarang', 'Yogyakarta', 
+#           'Surakarta','Surabaya', 'Medan', 'Makassar')
  
-populations = (45076704, 11626410, 212162757, 19109629, 50819826, 17579085,
-               3481, 287750, 785409)
+# populations = (45076704, 11626410, 212162757, 19109629, 50819826, 17579085,
+#                3481, 287750, 785409)
  
-plt.bar(x=cities, height=populations)
-plt.show()
+# plt.bar(x=cities, height=populations)
+# plt.xticks(rotation=45)
+# plt.show()
+# import matplotlib.pyplot as plt
+# import seaborn as sns
+# plt.show()
+import streamlit as st 
+st.write(
+    """
+    # My first app
+    Hello, para calon praktisi data masa depan!
+    """
+)
