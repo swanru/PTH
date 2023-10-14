@@ -94,5 +94,5 @@ import math
 # x = (5, 'program', 1+3j)
 # x[1] = 'Dicoding'
 # print(x)
-x = np.array([7, 1, 4, 8, 2, 3, 5])
-print(np.median(x)) 
+median = np.array([7, 1, 4, 8, 2, 3, 5])
+print(np.median(median)) 
