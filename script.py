@@ -81,10 +81,18 @@ import math
 # import matplotlib.pyplot as plt
 # import seaborn as sns
 # plt.show()
-import streamlit as st 
-st.write(
-    """
-    # My first app
-    Hello, para calon praktisi data masa depan!
-    """
-)
+# import streamlit as st 
+# st.write(
+#     """
+#     # My first app
+#     Hello, para calon praktisi data masa depan!
+#     """
+# )
+# x = { 'name': 'Coding', 'age': 20, 'isMarried': False }
+# x ['name'] = "Dicoding"
+# print(x)
+# x = (5, 'program', 1+3j)
+# x[1] = 'Dicoding'
+# print(x)
+x = np.array([7, 1, 4, 8, 2, 3, 5])
+print(np.median(x)) 
