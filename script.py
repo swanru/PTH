@@ -94,5 +94,24 @@ import math
 # x = (5, 'program', 1+3j)
 # x[1] = 'Dicoding'
 # print(x)
-median = np.array([7, 1, 4, 8, 2, 3, 5])
-print(np.median(median)) 
+# median = np.array([7, 1, 4, 8, 2, 3, 5])
+# print(np.median(median)) 
+# x = [1, 2.2, 'Dicoding']
+# x[0] = 'Indonesia'
+# print(x)
+# x = True 
+# y = False
+# print(x or y)
+# x = 1960 
+# y = 901 
+# print(x % y) 
+# lulus = True 
+# print("Dicoding Indonesia") if lulus else print("Python")
+# def penjumlahan(a, b, /):
+#     return a + b
+# print(penjumlahan(1,3))
+# def greeting(nama):
+#     print(f"Halo {nama}")
+# greeting("adit")
+if foo == 'blah': do_blah_thing() 
+else: do_non_blah_thing()
