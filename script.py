@@ -12,3 +12,4 @@ st.write(
     Hello, para calon praktisi data masa depan!
     """
 )
+"No","year","month"	"day"	"hour"	"PM2.5"	"PM10"	"SO2"	"NO2"	"CO"	"O3"	"TEMP"	"PRES"	"DEWP"	"RAIN"	"wd"	"WSPM","station"
